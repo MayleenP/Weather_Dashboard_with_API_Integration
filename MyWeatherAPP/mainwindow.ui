@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>650</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>820</width>
+    <height>705</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>60</y>
+      <width>621</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Current Weather</string>
+    </property>
+    <widget class="QLabel" name="lblDescription">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>190</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>190</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>190</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Weather Description</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblDescriptionImg">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>30</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>131</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>131</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Weather Logo</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbltemperature">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>160</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>160</width>
+       <height>90</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>160</width>
+       <height>90</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>17</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>60</y>
+       <width>45</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>45</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>45</width>
+       <height>18</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>o</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>100</y>
+       <width>47</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>47</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>47</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>C</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>60</y>
+       <width>50</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Wind</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblWind">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>60</y>
+       <width>40</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>20</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>90</y>
+       <width>85</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>85</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>85</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Humidity</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblHumidity">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>90</y>
+       <width>40</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>60</y>
+       <width>40</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>City</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>80</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>80</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Counrty</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCounrty_2">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>80</y>
+       <width>40</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>USA</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCity">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>60</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>75</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>75</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Chicago</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>90</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>90</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>90</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Feels like</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblFeelslike">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>170</y>
+       <width>60</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>60</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>17.5</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>170</y>
+       <width>49</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>49</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>49</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Max</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblMax">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>170</y>
+       <width>60</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>60</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>19</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>170</y>
+       <width>49</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>49</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>49</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Min</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblMin">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>170</y>
+       <width>60</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>60</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>17</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>621</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>80</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="lblCountry">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Country</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cmbCountry">
+       <property name="minimumSize">
+        <size>
+         <width>210</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>210</width>
+         <height>26</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtZipCode">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>26</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnGo">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Go</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextEdit" name="txtJsonString">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>350</y>
+      <width>621</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnShowDetails">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>140</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>140</width>
+      <height>26</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>140</width>
+      <height>26</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Show Details</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>650</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
